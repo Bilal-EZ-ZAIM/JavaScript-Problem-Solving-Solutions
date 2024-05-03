@@ -1,55 +1,51 @@
+// Défi 2 // Somme des nombres positifs
 
-// Chalenge 2 // Sum of Positive
+// Description
 
-// description 
+// Vous obtenez un tableau de nombres et retournez la somme de tous les nombres positifs.
 
-// You get an array of numbers retun the sum of all of the positives ones
+let tableau = [1, -5, 18, 10, -8, 5];
 
-let array = [1, -5, 18, 10, -8, 5];
+// Méthode 1
 
-// Method 1
+function somme_des_positifs(tableau) {
 
-function Sum_of_positive(array) {
-
-    const result = array.reduce((intialValue, item) => {
-        return item > 0 ? intialValue + item : intialValue
+    const resultat = tableau.reduce((valeurInitiale, element) => {
+        return element > 0 ? valeurInitiale + element : valeurInitiale;
     }, 0);
 
-    return result;
+    return resultat;
 
 }
 
-console.log(Sum_of_positive(array));
+console.log(somme_des_positifs(tableau));
 
 
-// Method 2 
-let reusult = 0;
-function SumOfPositive(array) {
+// Méthode 2 
+let resultat = 0;
+function sommeDesPositifs(tableau) {
 
-    for (let i = 0; array.length > i; i++) {
+    for (let i = 0; tableau.length > i; i++) {
 
-        if (array[i] > 0) {
-            reusult += array[i]
+        if (tableau[i] > 0) {
+            resultat += tableau[i];
         }
     }
 
-    return reusult;
+    return resultat;
 
 }
 
-console.log(SumOfPositive(array));
+console.log(sommeDesPositifs([1, -5, 18, 10, -8, -5, 25]));
 
 
-// Method 3
-function SumOfPositive3(array) {
+// Méthode 3
+function sommeDesPositifs3(tableau) {
 
-    const result = array.filter(item => item > 0)
-        .reduce((intialValue, item) => intialValue + item , 0);
-
-
-
-    return result;
+    const resultat = tableau.filter(element => element > 0)
+        .reduce((valeurInitiale, element) => valeurInitiale + element, 0);
+    return resultat;
 
 }
 
-console.log(SumOfPositive3(array));
+console.log(sommeDesPositifs3(tableau));

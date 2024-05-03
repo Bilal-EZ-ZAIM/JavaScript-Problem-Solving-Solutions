@@ -1,24 +1,20 @@
+// Défi 1 // Pair ou impair
 
+// Description
 
-// Chalenge 1 // Even or Odd
+// Créez une fonction prenant un entier en argument et renvoyant "Pair" pour les nombres pairs et "Impair" pour les nombres impairs.
 
-// description 
-
-// Creat a function that as integer as an argument and returns "Even" for even numbers "Odd" for odd number
-
-
-
-function even_or_odd(number) {
-    return number % 2 === 0 ?
-        `le nimiro ${number} est Even` :
-        `le nimiro ${number} est Odd`
+function pair_ou_impair(nombre) {
+    return nombre % 2 === 0 ?
+        `le nombre ${nombre} est Pair` :
+        `le nombre ${nombre} est Impair`;
 }
 
-console.log(even_or_odd(2))
-console.log(even_or_odd(21))
-console.log(even_or_odd(4))
-console.log(even_or_odd(3))
-console.log(even_or_odd(25))
-console.log(even_or_odd(29))
-console.log(even_or_odd(28))
-console.log(even_or_odd(32))
+console.log(pair_ou_impair(2));
+console.log(pair_ou_impair(21));
+console.log(pair_ou_impair(4));
+console.log(pair_ou_impair(3));
+console.log(pair_ou_impair(25));
+console.log(pair_ou_impair(29));
+console.log(pair_ou_impair(28));
+console.log(pair_ou_impair(32));
